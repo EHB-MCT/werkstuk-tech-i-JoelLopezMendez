@@ -1,0 +1,44 @@
+const int IN1=8;
+const int IN2=7;
+const int EN1=9;
+const int Potentiometer=A0;
+int MotorSpeed=0;
+char data;
+
+void setup()
+{
+  pinMode(PIN4, OUTPUT);
+  pinMode(PIN2, OUTPUT);
+  pinMode(EN1, OUTPUT);
+  Serial.println("");
+  Serial.println("");
+  Serial.println("");
+  digitalWrite(PIN4, LOW);
+  digitalWrite(PIN2, LOW);
+}
+
+void loop()
+{
+int sensorValue = analogRead(A0);
+Serial.println(sensorValue);
+delay(1);
+
+  while (Serial.available())
+  {
+    delay(10);
+    data=Serial.read();
+    Direction+=data;
+  }
+  if (Direction=="left")
+  {
+    digitalWrite(PIN4, HIGH);
+    digitalWrite(PIN2, LOW);
+    Serial.println("Motor run left direction");
+  }
+if (Direction=="right")
+  {
+    digitalWrite(PIN4, LOW);
+    digitalWrite(PIN2, HIGH);
+    Serial.println("Motor run right direction");
+  }
+}

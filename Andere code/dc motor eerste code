@@ -1,0 +1,60 @@
+// define pins
+#define RED 3
+#define BLUE 5
+#define GREEN 6
+#define button 2
+
+//define color mode
+int mode = 0;
+
+void detup() {
+  //setup LED lights
+  pinMode (RED, OUTPUT);
+  pinMode (GREEN, OUTPUT);
+  pinMode (BLUE, OUTPUT);
+
+  //setup buttons
+  pinMode (button, INPUT_PULLUP);
+
+}
+
+ void loop() {
+if (digitalRead (button) == LOW) {
+  mode = mode + 1;
+  delay (400);
+}
+//OFF
+if (mode == 0) {
+  analogWrite (BLUE, 0);
+  analogWrite (GREEN, 0);
+  analogWrite (RED, 0);
+}
+//White
+if (mode == 1) {
+  analogWrite (BLUE, 250);
+  analogWrite (GREEN, 250);
+  analogWrite (RED, 250);
+}
+//Red
+if (mode == 2) {
+  analogWrite (BLUE, 0);
+  analogWrite (GREEN, 0);
+  analogWrite (RED, 250);
+}
+//Orange
+if (mode == 3) {
+  analogWrite (BLUE, 0);
+  analogWrite (GREEN, 75);
+  analogWrite (RED, 250);
+}
+//Yellow
+if (mode == 4) {
+  analogWrite (BLUE, 0);
+  analogWrite (GREEN, 200);
+  analogWrite (RED, 250);
+}
+//Switch off
+if (mode == 5) {
+  mode = 0;
+}
+ }

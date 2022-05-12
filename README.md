@@ -5,8 +5,8 @@ Vul dit document aan, en deponeer de bestanden die je gebruikte in de beschikbar
 
 ## Eige informatie
 
-- Voornaam Achternaam
-- Klasgroep
+- Voornaam Achternaam: Joel Fr. López Méndez
+- Klasgroep: D-groep
 - Groepsnaam
 
 
@@ -32,10 +32,14 @@ Vul volgende elementen in, deze zullen dezelfde zijn voor iedereen in de groep. 
 
 Leg uit hoe je de experience van de gebruiker vormgaf en waar je nog dingen zou toevoegen (licht, geluid, materiaal, etc)
 
+De gebruiker kom de lichten (dus de ogen) groen gaan wanner ze bevrijd werden.
+En door de muur die gevallen of kapot ging wanneer de koning dood was en de ontploffing geluid krijg je dan een vrijheid gevoel.
+
+
 ## Interaction
 
 Leg uit welke interaction je hebt toegevoegd, en hoe je deze duidelijk maakt aan de gebruiker. Voeg toe hoe je deze in de toekomst anders zou aanpakken, of waar je meer duidelijkheid zou creeeren indien nodig.
 
+Ik heb de "Interaction" niet kunnen toevoegen omdat ik mijn code niet heb kunnen afmaken maar het was dat een muur ging vallen (door mider van een dc motor) en de gebruiker ging deze zelf moeten laten vallen door op een potentiometer te draaien, en deze ging op een tegel hangen met een getekend pijl dat duidelijk maakt dat jij eraan moet draaien.
 
-
-
+Wat ik extra kom doen was om een geluid te laten gaan wanner de muur viel, een geluid van een ontploffing of iets gelijk.
